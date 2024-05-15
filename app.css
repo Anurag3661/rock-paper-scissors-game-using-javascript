@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+h1{
+    background-color: #081b31;
+    color: #fff;
+    /* here we give height to our heading not our text */
+    height: 5rem;
+    /* for taking down slightly vertically down out text */
+    line-height: 5rem;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* when we hover on any of our image then it will show same color as of our main div and also its cursor also change */
+.choice:hover {
+    cursor: pointer;
+    background-color: #081b31;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    /* to make our photos more clear */
+    object-fit: cover;
+    /* to make our container round */
+    border-radius: 50%;
+}
+
+/* all 3 divs are inside one div that is "choices" and we that "choices" div flex so that all our 3 divs will be on same line  */
+.choices{
+    display: flex;
+    /* for horizontally and vertically align them */
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+}
+
+/* now our score and computer score will be on same vertical line eligent margin and gap between them*/
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #computer-score{
+    font-size: 4rem;
+}
+
+/* message container having its' children will be top down */
+.msg-container{
+    margin-top: 4rem;
+}
+
+/* paragraph which is having id "msg" is styled here */
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
